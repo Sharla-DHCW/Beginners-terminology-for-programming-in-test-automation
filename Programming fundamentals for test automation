@@ -1,6 +1,5 @@
 Programming Fundamentals for Test Automation: A Beginner's Guide
 
-
 #Introduction#
 As a tester moving into automation, you're about to learn skills that will make your testing faster, more reliable, and more comprehensive. This guide will introduce you to the fundamental concepts you need to understand before diving into test automation.
 
@@ -25,6 +24,26 @@ Test Automation Example: The `requests` library in Python lets you easily make H
 What it is: OOP is a programming approach that organizes code into "objects" - bundles of data and the actions that can be performed on that data.
 Metaphor: Think of OOP like organizing a company. Instead of having one person do everything, you have different departments (objects) with specific responsibilities. The HR department handles employee data and HR actions, the Finance department handles money and financial actions.
 Test Automation Example: You might create a `LoginPage` object that contains all the elements on a login page (username field, password field, login button) and all the actions you can perform (enter username, enter password, click login).
+
+# Variables
+What it is: Variables are containers that store data values.
+Metaphor: Like labeled boxes where you store different items. The label tells you what's inside.
+Example: `username = "testuser"` stores the text "testuser" in a variable called username.
+
+# Functions/Methods
+What it is: Functions are reusable blocks of code that perform specific tasks.
+Metaphor: Like recipes. Once you write a recipe (function), you can follow it repeatedly to make the same dish.
+Example: A function to login that you can call whenever you need to authenticate in your tests.
+
+# Loops
+What it is: Loops repeat a block of code multiple times.
+Metaphor: Like a washing machine cycle - it repeats the same steps until the job is done.
+Example: Running the same test with different data sets.
+
+# Conditionals (If/Else)
+What it is: Conditionals make decisions in code based on certain conditions.
+Metaphor: Like a traffic light - if green, go; if red, stop; if yellow, proceed with caution.
+Example: If login succeeds, continue with test; else, report failure.
 
 # Classes
 What it is: A class is a blueprint or template for creating objects. It defines what data an object will have and what actions it can perform.
@@ -52,26 +71,6 @@ What it is: Polymorphism allows objects of different classes to be treated the s
 Metaphor: Think of different types of vehicles. A car, motorcycle, and truck all have a "start engine" action, but each implements it differently. You can tell any vehicle to "start" without knowing the specific details of how each one does it.
 Test Automation Example: Different page objects might all have a `verify_page_loaded()` method. The LoginPage checks for the login form, the HomePage checks for the welcome message, but your test can call `verify_page_loaded()` on any page object without knowing the specific implementation.
 
-# Variables
-**What it is:** Variables are containers that store data values.
-**Metaphor:** Like labeled boxes where you store different items. The label tells you what's inside.
-**Example:** `username = "testuser"` stores the text "testuser" in a variable called username.
-
-# Functions/Methods
-**What it is:** Functions are reusable blocks of code that perform specific tasks.
-**Metaphor:** Like recipes. Once you write a recipe (function), you can follow it repeatedly to make the same dish.
-**Example:** A function to login that you can call whenever you need to authenticate in your tests.
-
-# Loops
-**What it is:** Loops repeat a block of code multiple times.
-**Metaphor:** Like a washing machine cycle - it repeats the same steps until the job is done.
-**Example:** Running the same test with different data sets.
-
-# Conditionals (If/Else)
-**What it is:** Conditionals make decisions in code based on certain conditions.
-**Metaphor:** Like a traffic light - if green, go; if red, stop; if yellow, proceed with caution.
-**Example:** If login succeeds, continue with test; else, report failure.
-
 #Programming Languages Overview#
 
 # Python
@@ -80,14 +79,14 @@ Why Good for Testing: Simple syntax, extensive libraries, strong community suppo
 Characteristics: Easy to learn, readable code, interpreted language (runs line by line)
 
 # C#
-**Best Used For:** Windows applications, web development, enterprise software, game development
-**Why Good for Testing:** Excellent Visual Studio integration, strong typing helps catch errors early
-**Characteristics:** Object-oriented, compiled language, part of Microsoft's .NET ecosystem
+Best Used For: Windows applications, web development, enterprise software, game development
+Why Good for Testing: Excellent Visual Studio integration, strong typing helps catch errors early
+Characteristics: Object-oriented, compiled language, part of Microsoft's .NET ecosystem
 
 # C++
 Best Used For: System programming, game development, high-performance applications
 Why Good for Testing: Performance-critical test tools, embedded system testing
-**Characteristics:** Low-level control, compiled language, steep learning curve but very powerful
+Characteristics: Low-level control, compiled language, steep learning curve but very powerful
 
 # Java
 Best Used For: Enterprise applications, web development, Android development
